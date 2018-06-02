@@ -1,0 +1,21 @@
+//
+//  ZSPrefixHeader.pch
+//  MethodSumAndEg
+//
+//  Created by zhenshenglin on 2018/6/2.
+//  Copyright © 2018年 zhenshenglin. All rights reserved.
+//
+
+#ifndef ZSPrefixHeader_pch
+#define ZSPrefixHeader_pch
+
+#import "ZSTabBarController.h"
+#import "ZSBaseNavigationController.h"
+#import "ZSBaseViewController.h"
+#import "ZSFirstVC.h"
+#import "ZSSecondVC.h"
+#import "ZSThirtVC.h"
+#import "ZSFourthVC.h"
+#import "ZSFifthVC.h"
+
+#endif /* ZSPrefixHeader_pch */
