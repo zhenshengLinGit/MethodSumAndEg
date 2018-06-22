@@ -17,7 +17,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"测试";
-    self.view.backgroundColor = [UIColor orangeColor];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+//    [self createBorderView];
+}
+
+// 自定义view的单个边框和圆角
+- (void)createBorderView {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIView *borderView = [[UIView alloc] init];
+    borderView.frame = CGRectMake(1, 1, 300, 100);
+    [borderView addBorderWithColor:[UIColor blackColor] andWidth:1 andPostion:POSITIONAll];
+    borderView.backgroundColor = [UIColor cyanColor];
+    [self.view addSubview:borderView];
+    
+    UIView *borderCornerView = [[UIView alloc] init];
+    borderCornerView.frame = CGRectMake(1, 120, 300, 100);
+    [borderCornerView addBorderWithColor:[UIColor blackColor] andWidth:4 andPostion:TOP|LEFT|RIGHT|BOTTOM corners:UIRectCornerAllCorners radius:2];
+    borderCornerView.backgroundColor = [UIColor cyanColor];
+    [self.view addSubview:borderCornerView];
 }
 
 @end
