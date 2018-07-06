@@ -7,6 +7,12 @@
 //
 
 #import "ZSTabBarController.h"
+#import "ZSBaseNavigationController.h"
+#import "ZSFirstVC.h"
+#import "ZSSecondVC.h"
+#import "ZSThirtVC.h"
+#import "ZSFourthVC.h"
+#import "ZSFirstVC.h"
 
 @interface ZSTabBarController ()
 

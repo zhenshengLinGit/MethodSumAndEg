@@ -21,5 +21,7 @@
 #define KBoldFontSize(CGFloat)    [UIFont boldSystemFontOfSize:CGFloat]
 //length为UI给的像素，以px为单位
 #define kScaleLen(length) ((length)/3.0f)
+//线的长度
+#define KBorderLineWidth    (([[UIScreen mainScreen] scale]) > 0.0 ? 1.0 / ([[UIScreen mainScreen] scale]) : 1.0)
 
 #endif /* Normal_h */

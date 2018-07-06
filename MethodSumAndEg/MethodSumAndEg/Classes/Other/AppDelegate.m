@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZSTabBarController.h"
 
 @interface AppDelegate ()
 

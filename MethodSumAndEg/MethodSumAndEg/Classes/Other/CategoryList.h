@@ -9,8 +9,6 @@
 #ifndef CategoryList_h
 #define CategoryList_h
 
-#import "UIColor+Category.h"
-#import "UIView+Category.h"
 #import "UIButton+Category.h"
 
 #endif /* CategoryList_h */

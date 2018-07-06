@@ -10,12 +10,14 @@
 #import "UILabel_Demo.h"
 #import "UIButton_Demo.h"
 #import "ScrollView_Demo.h"
+#import "UITextField_Demo.h"
 
 @interface ZSSecondVC ()
 
 @property (nonatomic,strong) UILabel_Demo *label_Demo;
 @property (nonatomic,strong) UIButton_Demo *button_Demo;
 @property (nonatomic,strong) ScrollView_Demo *scrollView_Demo;
+@property (nonatomic,strong) UITextField_Demo *textField_Demo;
 
 @end
 
@@ -33,9 +35,10 @@
 }
 
 - (void)createUI {
-//    [self.view addSubview:self.label_Demo];
+    [self.view addSubview:self.label_Demo];
 //    [self.view addSubview:self.button_Demo];
-    [self.view addSubview:self.scrollView_Demo];
+//    [self.view addSubview:self.scrollView_Demo];
+//    [self.view addSubview:self.textField_Demo];
     
     [self setupMasonry];
 }
@@ -53,6 +56,11 @@
     }
     if (self.scrollView_Demo.superview) {
         [self.scrollView_Demo mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.view);
+        }];
+    }
+    if (self.textField_Demo.superview) {
+        [self.textField_Demo mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.view);
         }];
     }
@@ -77,6 +85,13 @@
         _scrollView_Demo = [[ScrollView_Demo alloc] init];
     }
     return _scrollView_Demo;
+}
+
+-(UITextField_Demo *)textField_Demo {
+    if (!_textField_Demo) {
+        _textField_Demo = [[UITextField_Demo alloc] init];
+    }
+    return _textField_Demo;
 }
 
 @end

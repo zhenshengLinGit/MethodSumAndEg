@@ -7,6 +7,7 @@
 //
 
 #import "UIButton_Demo.h"
+#import "UIButton+Category.h"
 
 @interface UIButton_Demo ()
 
