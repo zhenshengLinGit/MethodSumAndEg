@@ -250,7 +250,7 @@ UIFont *GetVariationOfFontWithTrait(UIFont *baseFont, CTFontSymbolicTraits trait
     self.attributedText = attributedString;
 }
 
-#pragma mark - 改变字的描边
+#pragma mark - 改变字的笔画宽度
 - (void)GC_changeStrokeWidthWithTextStrikethroughWidth:(NSNumber *)textStrokeWidth
 {
     [self GC_changeStrokeWidthWithTextStrikethroughWidth:textStrokeWidth changeText:self.text];
@@ -305,7 +305,11 @@ UIFont *GetVariationOfFontWithTrait(UIFont *baseFont, CTFontSymbolicTraits trait
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
     NSRange textRange = [self.text rangeOfString:text options:NSBackwardsSearch];
     if (textRange.location != NSNotFound) {
-        [attributedString addAttribute:NSAttachmentAttributeName value:textAttachment range:textRange];
+        // 通过测试，直接使用NSAttachmentAttributeName是不行的。换另一种写法
+        // [attributedString addAttribute:NSAttachmentAttributeName value:textAttachment range:textRange];
+        // 通过attributedStringWithAttachment方法生成NSAttributedString对象，并插入
+        NSAttributedString *attribute = [NSAttributedString attributedStringWithAttachment:textAttachment];
+        [attributedString insertAttributedString:attribute atIndex:textRange.location];
     }
     self.attributedText = attributedString;
 }

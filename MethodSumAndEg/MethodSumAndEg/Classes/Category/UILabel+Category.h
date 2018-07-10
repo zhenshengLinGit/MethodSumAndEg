@@ -56,7 +56,7 @@
  *  改变句中某些范围的间距
  *
  *  @param textSpace 改变的间距
- *  @param range     改变的范围
+ *  @param range     改变的范围 - loc表示开始改变的index，len表示改变多少个
  */
 - (void)GC_changeSpaceWithTextSpace:(CGFloat)textSpace changeRange:(NSRange)range;
 
@@ -226,17 +226,17 @@
  */
 - (void)GC_changeStrokeColorWithTextStrikethroughColor:(UIColor *)textStrokeColor changeText:(NSString *)text;
 
-#pragma mark - 改变字的描边
+#pragma mark - 改变字的笔画宽度
 /**
- *  改变所有字段的描边
+ *  改变所有字段的笔画宽度
  *
- *  @param textStrokeWidth 改变的描边
+ *  @param textStrokeWidth 改变的笔画宽度
  */
 - (void)GC_changeStrokeWidthWithTextStrikethroughWidth:(NSNumber *)textStrokeWidth;
 /**
- *  改变句中某些字段的描边
+ *  改变句中某些字段的笔画宽度
  *
- *  @param textStrokeWidth 改变的描边
+ *  @param textStrokeWidth 改变的笔画宽度
  *  @param text            改变的字段
  */
 - (void)GC_changeStrokeWidthWithTextStrikethroughWidth:(NSNumber *)textStrokeWidth changeText:(NSString *)text;
@@ -331,17 +331,17 @@
  */
 - (void)GC_changeObliquenessWithTextObliqueness:(NSNumber *)textObliqueness changeText:(NSString *)text NS_AVAILABLE(10_0, 7_0);
 
-#pragma mark - 改变字粗细 0就是不变 >0加粗 <0加细
+#pragma mark - 改变字拉伸 0就是不变 >0拉伸 <0压缩
 /**
- *  改变所有字段的粗细
+ *  改变所有字段的拉伸
  *
- *  @param textExpansion 改变的粗细大小
+ *  @param textExpansion 改变的拉伸大小
  */
 - (void)GC_changeExpansionsWithTextExpansion:(NSNumber *)textExpansion NS_AVAILABLE(10_0, 7_0);
 /**
- *  改变句中某些字段的粗细
+ *  改变句中某些字段的拉伸
  *
- *  @param textExpansion 改变的粗细大小
+ *  @param textExpansion 改变的拉伸大小
  *  @param text          改变的字段
  */
 - (void)GC_changeExpansionsWithTextExpansion:(NSNumber *)textExpansion changeText:(NSString *)text NS_AVAILABLE(10_0, 7_0);

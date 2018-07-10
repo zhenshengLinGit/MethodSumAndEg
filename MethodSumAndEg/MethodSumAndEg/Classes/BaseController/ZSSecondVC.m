@@ -31,7 +31,7 @@
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     // ps：这个时候self.view的frame才会被确定下来，viewDidLoad时的frame是不准确的
-    NSLog(@"view的frame = %@", NSStringFromCGRect(self.view.frame));
+    // NSLog(@"view的frame = %@", NSStringFromCGRect(self.view.frame));
 }
 
 - (void)createUI {
