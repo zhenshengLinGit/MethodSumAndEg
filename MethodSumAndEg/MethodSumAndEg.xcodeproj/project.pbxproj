@@ -68,6 +68,9 @@
 		E88C666E20C294B9005006AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88C666C20C294B9005006AF /* Main.storyboard */; };
 		E88C667020C294B9005006AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C666F20C294B9005006AF /* Assets.xcassets */; };
 		E88C667320C294B9005006AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88C667120C294B9005006AF /* LaunchScreen.storyboard */; };
+		E896D2AD20F4AEAB0039C4C3 /* NSString_Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = E896D2AC20F4AEAB0039C4C3 /* NSString_Demo.m */; };
+		E896D2B020F4AFBE0039C4C3 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E896D2AF20F4AFBE0039C4C3 /* NSString+Category.m */; };
+		E896D2B320F4BC6E0039C4C3 /* textImageHtml.txt in Resources */ = {isa = PBXBuildFile; fileRef = E896D2B220F4BC6D0039C4C3 /* textImageHtml.txt */; };
 		E8E256D320C29D7700AC0BB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E256B320C29D7700AC0BB5 /* main.m */; };
 		E8E256D420C29D7700AC0BB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E256B420C29D7700AC0BB5 /* AppDelegate.m */; };
 		E8E256DF20C29D7700AC0BB5 /* ZSFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E256C320C29D7700AC0BB5 /* ZSFirstVC.m */; };
@@ -220,6 +223,11 @@
 		E88C666F20C294B9005006AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88C667220C294B9005006AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E88C667420C294B9005006AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E896D2AB20F4AEAB0039C4C3 /* NSString_Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSString_Demo.h; sourceTree = "<group>"; };
+		E896D2AC20F4AEAB0039C4C3 /* NSString_Demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSString_Demo.m; sourceTree = "<group>"; };
+		E896D2AE20F4AFBE0039C4C3 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		E896D2AF20F4AFBE0039C4C3 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		E896D2B220F4BC6D0039C4C3 /* textImageHtml.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textImageHtml.txt; sourceTree = "<group>"; };
 		E8D5D2E420C516490000CCA2 /* CategoryList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryList.h; sourceTree = "<group>"; };
 		E8E256B120C29D7700AC0BB5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8E256B320C29D7700AC0BB5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -296,6 +304,8 @@
 				E83BF5DB20DCF2B300CAC15F /* ScrollView_Demo.m */,
 				E8FED8FE20DE2B1D00F82BF5 /* UITextField_Demo.h */,
 				E8FED8FF20DE2B1D00F82BF5 /* UITextField_Demo.m */,
+				E896D2AB20F4AEAB0039C4C3 /* NSString_Demo.h */,
+				E896D2AC20F4AEAB0039C4C3 /* NSString_Demo.m */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -508,6 +518,8 @@
 				E83BF8CA20DD038200CAC15F /* UIButton+Category.m */,
 				E83A299920EF6F7000315ADF /* UILabel+Category.h */,
 				E83A299A20EF6F7000315ADF /* UILabel+Category.m */,
+				E896D2AE20F4AFBE0039C4C3 /* NSString+Category.h */,
+				E896D2AF20F4AFBE0039C4C3 /* NSString+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -538,6 +550,14 @@
 				E88C667420C294B9005006AF /* Info.plist */,
 			);
 			path = MethodSumAndEg;
+			sourceTree = "<group>";
+		};
+		E896D2B120F4BC6D0039C4C3 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				E896D2B220F4BC6D0039C4C3 /* textImageHtml.txt */,
+			);
+			path = Document;
 			sourceTree = "<group>";
 		};
 		E8E256AF20C29D7700AC0BB5 /* Classes */ = {
@@ -571,6 +591,7 @@
 		E8E256B520C29D7700AC0BB5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				E896D2B120F4BC6D0039C4C3 /* Document */,
 				E8FED90120DE32AC00F82BF5 /* littleImage */,
 				E8FED90220DE32AC00F82BF5 /* tabImage */,
 			);
@@ -690,6 +711,7 @@
 				E8FED91120DE32AC00F82BF5 /* tab_1@3x.png in Resources */,
 				E83BF5AC20DCECFF00CAC15F /* MJRefresh.bundle in Resources */,
 				E83BF5AD20DCECFF00CAC15F /* dropdown_loading_02.png in Resources */,
+				E896D2B320F4BC6E0039C4C3 /* textImageHtml.txt in Resources */,
 				E83BF5AF20DCECFF00CAC15F /* dropdown_loading_01.png in Resources */,
 				E8FED91320DE32AC00F82BF5 /* tab_4@3x.png in Resources */,
 				E8FED91820DE32D400F82BF5 /* product_add_type@3x.png in Resources */,
@@ -742,6 +764,7 @@
 				E8E256E020C29D7700AC0BB5 /* ZSBaseNavigationController.m in Sources */,
 				E83BF5B020DCECFF00CAC15F /* UIScrollView+MJExtension.m in Sources */,
 				E8E256E220C29D7700AC0BB5 /* ZSFourthVC.m in Sources */,
+				E896D2B020F4AFBE0039C4C3 /* NSString+Category.m in Sources */,
 				E83BF5C120DCECFF00CAC15F /* MKAnnotationView+WebCache.m in Sources */,
 				E83BF5D520DCECFF00CAC15F /* NSArray+MASAdditions.m in Sources */,
 				E83BF5D820DCECFF00CAC15F /* MASViewConstraint.m in Sources */,
@@ -756,6 +779,7 @@
 				E8E256E520C29D7700AC0BB5 /* ZSTabBarController.m in Sources */,
 				E83BF5D120DCECFF00CAC15F /* ViewController+MASAdditions.m in Sources */,
 				E83BF5D620DCECFF00CAC15F /* View+MASAdditions.m in Sources */,
+				E896D2AD20F4AEAB0039C4C3 /* NSString_Demo.m in Sources */,
 				E8E256E620C29D7700AC0BB5 /* ZSBaseViewController.m in Sources */,
 				E83BF5BD20DCECFF00CAC15F /* MJRefreshBackFooter.m in Sources */,
 				E83BF5BA20DCECFF00CAC15F /* MJRefreshGifHeader.m in Sources */,
@@ -915,6 +939,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MethodSumAndEg/Classes/Other/ZSPrefixHeader.pch;
 				INFOPLIST_FILE = MethodSumAndEg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gcall.MethodSumAndEg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -931,6 +956,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MethodSumAndEg/Classes/Other/ZSPrefixHeader.pch;
 				INFOPLIST_FILE = MethodSumAndEg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gcall.MethodSumAndEg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
