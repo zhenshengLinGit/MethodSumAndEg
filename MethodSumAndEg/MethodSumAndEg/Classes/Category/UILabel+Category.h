@@ -64,7 +64,7 @@
 /**
  *  改变句中所有的行间距
  *
- *  @param lineSpace 改变的行间距
+ *  @param textLineSpace 改变的行间距
  */
 - (void)GC_changeLineSpaceWithTextLineSpace:(CGFloat)textLineSpace;
 /**
@@ -260,7 +260,7 @@
 /**
  *  改变所有字段的特殊效果
  *
- *  @param textLink 改变的特殊效果
+ *  @param textEffect 改变的特殊效果
  */
 - (void)GC_changeTextEffectWithTextEffect:(NSString *)textEffect NS_AVAILABLE(10_10, 7_0);
 /**

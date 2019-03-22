@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>contactId</key>
+		<real>123456792</real>
+		<key>name</key>
+		<string>王一</string>
+	</dict>
+	<dict>
+		<key>contactId</key>
+		<real>123456793</real>
+		<key>name</key>
+		<string>123特殊字符</string>
+	</dict>
+	<dict>
+		<key>contactId</key>
+		<integer>123456789</integer>
+		<key>name</key>
+		<string>林一</string>
+	</dict>
+	<dict>
+		<key>contactId</key>
+		<real>123456793</real>
+		<key>name</key>
+		<string>Jason</string>
+	</dict>
+	<dict>
+		<key>contactId</key>
+		<real>123456791</real>
+		<key>name</key>
+		<string>令一</string>
+	</dict>
+	<dict>
+		<key>contactId</key>
+		<real>123456790</real>
+		<key>name</key>
+		<string>淋一</string>
+	</dict>
+	<dict>
+		<key>contactId</key>
+		<real>123456793</real>
+		<key>name</key>
+		<string>jason</string>
+	</dict>
+</array>
+</plist>
