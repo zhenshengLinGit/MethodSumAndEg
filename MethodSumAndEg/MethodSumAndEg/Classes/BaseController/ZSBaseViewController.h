@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZSBaseViewController : UIViewController
+@interface ZSBaseViewController : UIViewController <UINavigationControllerDelegate, UITabBarControllerDelegate>
+
+- (void)registerNavigationBarHidden;
 
 @end

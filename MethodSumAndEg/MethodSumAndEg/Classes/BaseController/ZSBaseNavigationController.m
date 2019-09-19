@@ -8,7 +8,9 @@
 
 #import "ZSBaseNavigationController.h"
 
-@interface ZSBaseNavigationController ()
+@interface ZSBaseNavigationController () <UIGestureRecognizerDelegate>
+
+@property (nonatomic, strong) UIPanGestureRecognizer *fullScreenPopGestureRecorgnizer;
 
 @end
 
@@ -16,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self addFullScreenPopGesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +26,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)addFullScreenPopGesture {
+    self.interactivePopGestureRecognizer.enabled = NO;
+    id target = self.interactivePopGestureRecognizer.delegate;
+    self.fullScreenPopGestureRecorgnizer = [[UIPanGestureRecognizer alloc] initWithTarget:target action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:self.fullScreenPopGestureRecorgnizer];
+    self.fullScreenPopGestureRecorgnizer.delegate = self;
 }
-*/
 
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer == self.fullScreenPopGestureRecorgnizer) {
+        if (self.viewControllers.count <= 1) {
+            return NO;
+        }
+        CGPoint velocity = [self.fullScreenPopGestureRecorgnizer velocityInView:self.view];
+        if (velocity.x <= 0) {
+            return NO;
+        }
+    }
+    return YES;
+}
 @end

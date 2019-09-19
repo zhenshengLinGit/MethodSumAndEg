@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		107FE3CC2318C53100959462 /* ZSPushTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FE3CB2318C53100959462 /* ZSPushTestViewController.m */; };
+		107FE3D22318CFD300959462 /* ZSPushTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107FE3D12318CFD300959462 /* ZSPushTestTwoViewController.m */; };
 		E83A299820EF5EED00315ADF /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E83A299720EF5EED00315ADF /* TTTAttributedLabel.m */; };
 		E83A299B20EF6F7000315ADF /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = E83A299A20EF6F7000315ADF /* UILabel+Category.m */; };
 		E83BF53620DCE31900CAC15F /* ExtensibleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E83BF53520DCE31900CAC15F /* ExtensibleLabel.m */; };
@@ -116,6 +118,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		107FE3CA2318C53100959462 /* ZSPushTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSPushTestViewController.h; sourceTree = "<group>"; };
+		107FE3CB2318C53100959462 /* ZSPushTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSPushTestViewController.m; sourceTree = "<group>"; };
+		107FE3D02318CFD200959462 /* ZSPushTestTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSPushTestTwoViewController.h; sourceTree = "<group>"; };
+		107FE3D12318CFD300959462 /* ZSPushTestTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSPushTestTwoViewController.m; sourceTree = "<group>"; };
 		E83A299620EF5EED00315ADF /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		E83A299720EF5EED00315ADF /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		E83A299920EF6F7000315ADF /* UILabel+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
@@ -335,6 +341,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		107FE3C92318C51800959462 /* OtherController */ = {
+			isa = PBXGroup;
+			children = (
+				107FE3CA2318C53100959462 /* ZSPushTestViewController.h */,
+				107FE3CB2318C53100959462 /* ZSPushTestViewController.m */,
+				107FE3D02318CFD200959462 /* ZSPushTestTwoViewController.h */,
+				107FE3D12318CFD300959462 /* ZSPushTestTwoViewController.m */,
+			);
+			path = OtherController;
+			sourceTree = "<group>";
+		};
 		E83A299520EF5EED00315ADF /* TTTAttributedLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,6 +701,7 @@
 				E8E256C620C29D7700AC0BB5 /* ZSFourthVC.m */,
 				E8E256CB20C29D7700AC0BB5 /* ZSFifthVC.h */,
 				E8E256C520C29D7700AC0BB5 /* ZSFifthVC.m */,
+				107FE3C92318C51800959462 /* OtherController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -905,6 +923,7 @@
 				E83BF5C720DCECFF00CAC15F /* UIImage+MultiFormat.m in Sources */,
 				E83BF5B620DCECFF00CAC15F /* MJRefreshAutoGifFooter.m in Sources */,
 				E83BF5C820DCECFF00CAC15F /* SDWebImageCompat.m in Sources */,
+				107FE3D22318CFD300959462 /* ZSPushTestTwoViewController.m in Sources */,
 				E83BF5B920DCECFF00CAC15F /* MJRefreshStateHeader.m in Sources */,
 				E83BF5C420DCECFF00CAC15F /* UIImageView+HighlightedWebCache.m in Sources */,
 				E83BF5C320DCECFF00CAC15F /* SDWebImageDecoder.m in Sources */,
@@ -952,6 +971,7 @@
 				E83BF5D320DCECFF00CAC15F /* MASConstraintMaker.m in Sources */,
 				E8D511AA20FF69B40064A80C /* NSObject+MJKeyValue.m in Sources */,
 				E83BF5AA20DCECFF00CAC15F /* UIScrollView+MJRefresh.m in Sources */,
+				107FE3CC2318C53100959462 /* ZSPushTestViewController.m in Sources */,
 				E83BF5CC20DCECFF00CAC15F /* NSData+ImageContentType.m in Sources */,
 				E83BF5B520DCECFF00CAC15F /* MJRefreshAutoStateFooter.m in Sources */,
 				E87FFA2720C4F3D300A50338 /* UIView+Category.m in Sources */,

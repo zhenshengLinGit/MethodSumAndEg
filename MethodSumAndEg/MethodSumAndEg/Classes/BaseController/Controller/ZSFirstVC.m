@@ -7,6 +7,7 @@
 //
 
 #import "ZSFirstVC.h"
+#import "ZSPushTestViewController.h"
 
 @interface ZSFirstVC ()
 
@@ -19,9 +20,19 @@
     self.title = @"测试";
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+//    if (self.navigationController.navigationBar.hidden == true) {
+//        [self.navigationController setNavigationBarHidden:NO animated:NO];
+//    }
+//    [self.navigationController setNavigationBarHidden:NO animated:NO];
+}
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
 //    [self createBorderView];
+    ZSPushTestViewController *pushVC = [[ZSPushTestViewController alloc] init];
+    [self.navigationController pushViewController:pushVC animated:true];
 }
 
 // 自定义view的单个边框和圆角
